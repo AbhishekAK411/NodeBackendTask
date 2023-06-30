@@ -4,8 +4,6 @@ export const countProduct = async (req,res) =>{
     try {
         const category = req.query.category;
         const range = req.query.range;
-
-        if(category != 'laptop' && category != 'phone') return res.send("Invalid category. Please check the category field.");
         let countAllProducts =await productSchema.countDocuments();
         if(!category && !range){
             return res.send("Count of all Products : "+ countAllProducts);

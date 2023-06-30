@@ -97,5 +97,14 @@
         "instock": "Yes",
         "description" : "7 Inch HD Quality Display",
         "category": "phone"
+    },
+    {
+        "p_id": "11",
+        "name": "Test",
+        "price":80000,
+        "Quantity": 42,
+        "instock": "Yes",
+        "description" : "test",
+        "category": "laptop"
     }
 ]

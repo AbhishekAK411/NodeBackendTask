@@ -29,7 +29,7 @@ export const addProduct = async(req,res) =>{
                 category : category
             });
 
-            await newProduct.save();
+            await productSchema.create(newProduct);
         }
         return res.send("Products added successfully.");       
     } catch (error) {
